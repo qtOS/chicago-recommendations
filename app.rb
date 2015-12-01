@@ -12,8 +12,8 @@ get '/' do
 
 end
 
-get '/populate' do
+get '/api' do
 
-  'populate the room yo'
-  
+  Recommendation.all.to_json
+
 end
